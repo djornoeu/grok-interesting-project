@@ -1,28 +1,23 @@
-# Grok Interesting Project
+**Docker**
 
-**Análise de Dados + Machine Learning com Python**
+### Como rodar com Docker
 
-Starter kit moderno criado pela Grok para você (Rodrigo) explorar análise de dados e modelos de ML.
+1. **Build e run com Docker Compose** (recomendado):
+   ```bash
+   docker compose up --build
+   ```
 
-## Objetivo
-Fornecer uma base profissional com exemplos práticos que você pode expandir.
+   - Streamlit: http://localhost:8501
+   - Jupyter: http://localhost:8888 (token no terminal)
 
-## Tecnologias
-- Python 3.9+
-- pandas, numpy, matplotlib, seaborn
-- scikit-learn
-- Jupyter Notebooks
+2. **Só Docker (Streamlit)**:
+   ```bash
+   docker build -t grok-ds .
+   docker run -p 8501:8501 grok-ds
+   ```
 
-## Como usar
-1. Clone o repositório
-2. `pip install -r requirements.txt`
-3. Abra os notebooks em `notebooks/`
+### Arquivos adicionados:
+- `Dockerfile` — Imagem otimizada Python slim
+- `docker-compose.yml` — Streamlit + Jupyter
+- `.dockerignore` — Ignora arquivos desnecessários
 
-## Estrutura
-- `notebooks/` → Análises e experimentos
-- `src/` → Código reutilizável
-- `data/` → Dados (exemplo gerado)
-
-Divirta-se explorando! 🚀
-
-Criado por Grok para @djornoeu
