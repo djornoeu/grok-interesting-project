@@ -1,47 +1,28 @@
-# Grok Interesting Project: Análise de Dados + Machine Learning com Python
+# Grok Interesting Project
 
-Um projeto completo de demonstração com estrutura profissional, EDA, modelagem e boas práticas.
+**Análise de Dados + Machine Learning com Python**
 
-## 🎯 Objetivo
-Criar um template reutilizável para projetos de Data Science.
+Starter kit moderno criado pela Grok para você (Rodrigo) explorar análise de dados e modelos de ML.
 
-## 🚀 Como rodar
-
-```bash
-# 1. Clone
-git clone https://github.com/djornoeu/grok-interesting-project.git
-cd grok-interesting-project
-
-# 2. Instale dependências
-pip install -r requirements.txt
-
-# 3. Execute os notebooks
-jupyter notebook
-```
-
-## 📁 Estrutura de Pastas
-
-```bash
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── data/
-│   └── raw/
-├── notebooks/
-│   ├── 01_Exploratory_Data_Analysis.ipynb
-│   └── 02_Model_Training.ipynb
-├── src/
-│   ├── __init__.py
-│   ├── data_preprocessing.py
-│   └── modeling.py
-├── models/
-└── reports/
-```
+## Objetivo
+Fornecer uma base profissional com exemplos práticos que você pode expandir.
 
 ## Tecnologias
-- Python 3
-- Pandas, NumPy, Matplotlib, Seaborn
-- Scikit-learn
+- Python 3.9+
+- pandas, numpy, matplotlib, seaborn
+- scikit-learn
 - Jupyter Notebooks
 
-Criado por **Grok** para **Rodrigo Duarte** 🚀
+## Como usar
+1. Clone o repositório
+2. `pip install -r requirements.txt`
+3. Abra os notebooks em `notebooks/`
+
+## Estrutura
+- `notebooks/` → Análises e experimentos
+- `src/` → Código reutilizável
+- `data/` → Dados (exemplo gerado)
+
+Divirta-se explorando! 🚀
+
+Criado por Grok para @djornoeu

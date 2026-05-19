@@ -1,21 +1,7 @@
-# .gitignore for Data Science
-
-# Data
-*.csv
-*.parquet
-*.xlsx
-!data/raw/*.csv
-
-# Notebooks outputs
-.ipynb_checkpoints/
-
-# Environment
-.venv/
-env/
-venv/
+# .gitignore
 __pycache__/
 *.pyc
-
-# OS
-.DS_Store
-Thumbs.db
+.ipynb_checkpoints/
+env/
+.venv/
+data/*.csv
