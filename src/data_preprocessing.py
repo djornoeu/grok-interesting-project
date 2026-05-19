@@ -1,14 +1,23 @@
-# Data preprocessing utilities
-
 import pandas as pd
-from sklearn.model_selection import train_test_split
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-def load_and_split_data(filepath='data/raw/synthetic_data.csv', test_size=0.2, random_state=42):
-    df = pd.read_csv(filepath)
-    X = df.drop('aprovado', axis=1)
-    y = df['aprovado']
-    return train_test_split(X, y, test_size=test_size, random_state=random_state)
+# Carregar dados
+def load_sample_data():
+    np.random.seed(42)
+    data = {
+        'idade': np.random.randint(18, 65, 500),
+        'salario': np.random.normal(5000, 1500, 500).round(2),
+        'experiencia': np.random.randint(0, 35, 500),
+        'nivel_educacao': np.random.choice(['Fundamental', 'Médio', 'Superior', 'Pós'], 500),
+        'departamento': np.random.choice(['TI', 'RH', 'Financeiro', 'Marketing', 'Operações'], 500),
+        'satisfacao': np.random.randint(1, 11, 500)
+    }
+    df = pd.DataFrame(data)
+    return df
 
-def preprocess_features(X):
-    # Simple scaling if needed
-    return X
+if __name__ == "__main__":
+    df = load_sample_data()
+    print(df.head())
+    df.to_csv('data/sample_data.csv', index=False)
