@@ -1,0 +1,7 @@
+idade,renda_mensal,horas_estudo,nota,aprovado
+56,6509,9,6.6,0
+46,4134,4,1.1,0
+32,6253,35,6.4,1
+60,3305,5,5.0,0
+25,5794,25,4.1,1
+# ... (1000 rows geradas sinteticamente)
